@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/im_nguoidung"
+            android:layout_width="42dp"
+            android:layout_height="46dp"
+            android:background="@drawable/ic_person_pin"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DDau ."
+                    android:id="@+id/tv_name"/>
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#CC3B0D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theo dõi"
+                    android:id="@+id/tv_theodoi"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="ddau ."
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_songuoitheodoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_name2"
+                    android:text="3.652 người đã theo dõi"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_vdoan1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+        <ImageView
+            android:id="@+id/im_vdoan2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+        <ImageView
+            android:id="@+id/im_vdoan3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+        <ImageView
+            android:id="@+id/im_vdoan4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+        <ImageView
+            android:id="@+id/im_vdoan5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+        <ImageView
+            android:id="@+id/im_vdoan6"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doan1" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
