@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -24,6 +24,7 @@
             android:hint="Tìm review, địa điểm,..." />
 
         <TextView
+            android:id="@+id/tv_huy"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:layout_marginTop="10dp"
@@ -38,14 +39,14 @@
         android:layout_height="0dp"
         android:layout_weight="9">
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_main"
+            android:id="@+id/tl_seachmain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabTextColor="#F34007">
 
         </com.google.android.material.tabs.TabLayout>
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/vp_main"
+            android:id="@+id/vp_seachmain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

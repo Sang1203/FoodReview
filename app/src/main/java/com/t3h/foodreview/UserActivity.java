@@ -9,8 +9,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.t3h.foodreview.Adapter.PageUserAdapter;
+
 public class UserActivity extends AppCompatActivity {
     private ViewPager viewPager;
+    private PageUserAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

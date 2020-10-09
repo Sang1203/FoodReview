@@ -1,6 +1,7 @@
 package com.t3h.foodreview.Adapter;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -54,6 +55,22 @@ public class PageSeachAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return 4;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0:
+            default:
+                return "Tất cả";
+            case 1:
+                return "Bài viết";
+            case 2:
+                return "Địa điểm";
+            case 3:
+                return "Tài Khoản";
+        }
     }
 }
