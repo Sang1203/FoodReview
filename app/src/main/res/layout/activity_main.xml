@@ -20,40 +20,40 @@
            android:layout_gravity="center">
 
            <TextView
+               android:layout_marginTop="3dp"
                android:id="@+id/tv_theodoi"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-
                android:layout_marginRight="19dp"
                android:layout_toLeftOf="@id/tv_khampha"
                android:text="Theo dõi"
-               android:textSize="20dp" />
+               android:textSize="15dp" />
 
            <TextView
+               android:layout_marginTop="5dp"
                android:id="@+id/tv_khampha"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_centerInParent="true"
                android:text="Khám phá"
-               android:textSize="20dp" />
+               android:textSize="15dp" />
 
            <TextView
-
+               android:layout_marginTop="3dp"
                android:id="@+id/tv_chude"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_marginLeft="18dp"
                android:layout_toRightOf="@id/tv_khampha"
                android:text="Chủ đề"
-               android:textSize="20dp" />
+               android:textSize="15dp" />
 
        </RelativeLayout>
        <RelativeLayout
+           android:paddingTop="10dp"
            android:layout_width="match_parent"
            android:layout_height="0dp"
-           android:layout_weight="1"
-           android:padding="8dp">
-
+           android:layout_weight="1">
            <EditText
                android:id="@+id/edt_timkiem"
                android:layout_width="365dp"
@@ -74,8 +74,6 @@
                android:layout_toRightOf="@id/edt_timkiem"
                android:text="Hà Nội"
                android:textSize="20dp" />
-
-
        </RelativeLayout>
 
 
@@ -84,11 +82,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9">
-        <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="10">
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
 
     </LinearLayout>
 
@@ -98,11 +104,12 @@
         android:layout_weight="1">
 
         <Button
-            android:layout_centerInParent="true"
             android:id="@+id/btn_riview"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@drawable/riviu" />
+            android:layout_width="62dp"
+            android:layout_height="39dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/riviu"
+            android:padding="16dp" />
 
         <Button
             android:layout_marginTop="12dp"
