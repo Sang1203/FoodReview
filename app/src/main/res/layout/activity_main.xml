@@ -18,42 +18,35 @@
            android:layout_weight="1"
            android:padding="16dp"
            android:layout_gravity="center">
+           <com.google.android.material.tabs.TabLayout
+               app:tabIndicatorColor="#fff"
+               android:layout_marginLeft="32dp"
+               android:layout_marginRight="32dp"
+               android:id="@+id/tl_main"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.google.android.material.tabs.TabItem
+                   android:text="Theo doi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.google.android.material.tabs.TabItem
+                   android:text="Theo doi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.google.android.material.tabs.TabItem
+                   android:text="Theo doi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
 
-           <TextView
-               android:layout_marginTop="3dp"
-               android:id="@+id/tv_theodoi"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginRight="19dp"
-               android:layout_toLeftOf="@id/tv_khampha"
-               android:text="Theo dõi"
-               android:textSize="15dp" />
+           </com.google.android.material.tabs.TabLayout>
 
-           <TextView
-               android:layout_marginTop="5dp"
-               android:id="@+id/tv_khampha"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_centerInParent="true"
-               android:text="Khám phá"
-               android:textSize="15dp" />
-
-           <TextView
-               android:layout_marginTop="3dp"
-               android:id="@+id/tv_chude"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="18dp"
-               android:layout_toRightOf="@id/tv_khampha"
-               android:text="Chủ đề"
-               android:textSize="15dp" />
 
        </RelativeLayout>
        <RelativeLayout
-           android:paddingTop="10dp"
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1">
+
            <EditText
                android:id="@+id/edt_timkiem"
                android:layout_width="365dp"
@@ -83,19 +76,32 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10">
-
-        <ScrollView
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabItem
+                android:text="Theo doi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+            </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:text="Kham pha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            </androidx.recyclerview.widget.RecyclerView>
-        </ScrollView>
+            </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:text="Chu de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+            </com.google.android.material.tabs.TabItem>
+
+
+
+        </androidx.viewpager.widget.ViewPager>
     </LinearLayout>
 
     <RelativeLayout
