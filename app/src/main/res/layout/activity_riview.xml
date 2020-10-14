@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <Button
+            android:id="@+id/btn_dangbai"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="Đăng bài" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="#fff"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/riviu"
+            android:text="Hình"
+            android:textStyle="italic" />
+        <Button
+            android:background="#fff"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/star"
+            android:text="Hình"
+            android:textStyle="italic" />
+        <Button
+            android:background="#fff"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/star"
+            android:text="Hình"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+    
+
+</LinearLayout>
