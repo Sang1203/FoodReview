@@ -108,54 +108,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-
-        <Button
-            android:id="@+id/btn_riview"
-            android:layout_width="62dp"
-            android:layout_height="39dp"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="@drawable/riviu"
-            android:padding="16dp" />
-
-        <Button
-            android:layout_marginTop="12dp"
-            android:id="@+id/btn_home"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="44dp"
-            android:layout_toLeftOf="@+id/btn_video"
-            android:background="@drawable/ic_home" />
-
-        <Button
-            android:layout_marginTop="12dp"
-            android:id="@+id/btn_video"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="30dp"
-            android:layout_toLeftOf="@id/btn_riview"
-            android:background="@drawable/ic_play" />
-
-        <Button
-            android:layout_marginTop="12dp"
-            android:id="@+id/btn_thongbao"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="33dp"
-            android:layout_toRightOf="@+id/btn_riview"
-            android:background="@drawable/ic_thongbao" />
-
-        <Button
-            android:layout_marginTop="12dp"
-            android:id="@+id/btn_nguoidung"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="42dp"
-            android:layout_toRightOf="@+id/btn_thongbao"
-            android:background="@drawable/ic_baseline_person_24" />
+            app:menu="@menu/bottom_navigation"/>
 
 
     </RelativeLayout>

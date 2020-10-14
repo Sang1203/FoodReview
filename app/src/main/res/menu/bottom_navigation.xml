@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_video"
+        android:icon="@drawable/ic_play"
+        android:title="Video" />
+    <item
+        android:layout_width="62dp"
+        android:layout_height="39dp"
+        android:id="@+id/nav_riview"
+        android:icon="@drawable/riviu"
+        android:title="Riview" />
+    <item
+        android:id="@+id/nav_thongbao"
+        android:icon="@drawable/ic_thongbao"
+        android:title="Thông báo" />
+    <item
+        android:id="@+id/nav_nguoidung"
+        android:icon="@drawable/ic_person_pin"
+        android:title="Người dùng" />
+
+</menu>

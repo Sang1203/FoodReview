@@ -15,11 +15,11 @@ import com.t3h.foodreview.R;
 
 import java.util.List;
 
-public class PageKhamPhaAdapter extends RecyclerView.Adapter<PageKhamPhaAdapter.PageKhamPhaHolder>{
+public class KhamPhaAdapter extends RecyclerView.Adapter<KhamPhaAdapter.PageKhamPhaHolder>{
     private LayoutInflater inflater;
     private List<KhamPha> data;
 
-    public PageKhamPhaAdapter(LayoutInflater inflater) {
+    public KhamPhaAdapter(LayoutInflater inflater) {
         this.inflater = inflater;
     }
 
@@ -39,7 +39,7 @@ public class PageKhamPhaAdapter extends RecyclerView.Adapter<PageKhamPhaAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PageKhamPhaAdapter.PageKhamPhaHolder holder, int position) {
+    public void onBindViewHolder(@NonNull KhamPhaAdapter.PageKhamPhaHolder holder, int position) {
         holder.bindView(data.get(position));
     }
 

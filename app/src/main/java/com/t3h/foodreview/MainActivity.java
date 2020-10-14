@@ -6,17 +6,27 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 import com.t3h.foodreview.Adapter.MainVpagerAdapter;
+import com.t3h.foodreview.Adapter.PageKpAdapter;
+import com.t3h.foodreview.Adapter.PageTheoDoiAdapter;
+import com.t3h.foodreview.Models.KhamPha;
+import com.t3h.foodreview.Models.TheoDoi;
 import com.t3h.foodreview.fragment.ChudeFragment;
+import com.t3h.foodreview.fragment.KPAllFragment;
+import com.t3h.foodreview.fragment.KPDulichFragment;
+import com.t3h.foodreview.fragment.KPGanbanFragment;
+import com.t3h.foodreview.fragment.KPMonAnFragment;
 import com.t3h.foodreview.fragment.KhamPhaFragment;
 import com.t3h.foodreview.fragment.TheodoiFragment;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private MainVpagerAdapter adapter;
@@ -24,11 +34,13 @@ public class MainActivity extends AppCompatActivity {
     private EditText edtSeach;
     private TextView tvVitri;
     private TabLayout tabLayoutMain;
-    private Button btNHome,btnVideo,btnThongbao,btnNguoidung,btnRiview;
     private ArrayList<Fragment> fragments = new ArrayList<>();
+    private ArrayList<TheoDoi> dataTd;
+    private  ArrayList<KhamPha> dataKp;
     private ChudeFragment cdFragment;
     private KhamPhaFragment khamPhaFragment;
     private TheodoiFragment theodoiFragment;
+    private PageTheoDoiAdapter adapterTd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         initFragment();
         initViews();
     }
-
     private void initFragment() {
         cdFragment = new ChudeFragment();
         khamPhaFragment = new KhamPhaFragment();
@@ -52,11 +63,6 @@ public class MainActivity extends AppCompatActivity {
         edtSeach = findViewById(R.id.edt_timkiem);
         tvVitri = findViewById(R.id.tv_diadiem);
         tabLayoutMain =findViewById(R.id.tl_main);
-        btNHome = findViewById(R.id.btn_home);
-        btnVideo = findViewById(R.id.btn_video);
-        btnThongbao = findViewById(R.id.btn_thongbao);
-        btnNguoidung = findViewById(R.id.btn_nguoidung);
-        btnRiview = findViewById(R.id.btn_riview);
         adapter = new MainVpagerAdapter(getSupportFragmentManager(),fragments);
         vpMain.setAdapter(adapter);
         tabLayoutMain.setupWithViewPager(vpMain);
