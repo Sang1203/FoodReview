@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:text="Thêm địa điểm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/duongvien_goctron"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_baseline_storefront_24"
+        android:drawablePadding="16dp"
+        android:hint="Tên địa điểm" />
+
+    <EditText
+        android:background="@drawable/duongvien_goctron"
+        android:layout_width="377dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_vitri"
+        android:hint="Địa chỉ" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/duongvien_goctron"
+            android:drawableTop="@drawable/image"
+            android:text="Hình"
+            android:textStyle="italic" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/duongvien_goctron"
+            android:drawableTop="@drawable/video"
+            android:text="Video"
+            android:textStyle="italic" />
+
+        <Button
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/duongvien_goctron"
+            android:drawableTop="@drawable/youtube"
+            android:text="YouTube"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#FF5722"
+        android:text="Hoàn Thành"
+        android:textColor="#fff" />
+
+</LinearLayout>

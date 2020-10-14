@@ -26,32 +26,85 @@
     </LinearLayout>
 
     <LinearLayout
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:orientation="horizontal">
+        android:layout_height="132dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
         <Button
-            android:background="#fff"
             android:layout_width="122dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/riviu"
+            android:background="#fff"
+            android:drawableTop="@drawable/image"
             android:text="Hình"
             android:textStyle="italic" />
+
         <Button
-            android:background="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="122dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/star"
-            android:text="Hình"
+            android:background="#fff"
+            android:drawableTop="@drawable/video"
+            android:text="Video"
             android:textStyle="italic" />
+
         <Button
-            android:background="#fff"
             android:layout_width="122dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/star"
-            android:text="Hình"
+            android:background="#fff"
+            android:drawableTop="@drawable/youtube"
+            android:text="YouTube"
             android:textStyle="italic" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:text="Cho Riview của bạn một tiêu đề"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="169dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:text="Địa Điểm "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:drawableLeft="@drawable/ic_vitri"
+                android:drawablePadding="16dp"
+                android:hint="Nhấn vào để chọn địa điểm Riview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
     </LinearLayout>
     

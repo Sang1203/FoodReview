@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+
+        android:id="@+id/im_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/thongbao" />
+
+    <TextView
+        android:layout_width="306dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/im_logo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="-432dp"
+        android:lines="3"
+        android:text="Bạn càn đăng nhập để sử dụng chưc năng này!"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_logo"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="-488dp"
+        android:lines="1"
+        android:text="Thông Báo"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="191dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/im_logo"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="-292dp"
+        android:background="#F6430A"
+        android:gravity="center"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:text="Đăng nhập ngay"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
